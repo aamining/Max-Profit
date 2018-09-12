@@ -1,0 +1,38 @@
+
+## TWo real world cases. Please commented one to work and see results
+
+# Case 1: Buy Today, Sell : Same Day
+```
+
+const prices = [ 201, 205, 220, 1, 190, 185, 205, 25, 30]
+
+
+var sell = 0
+var buy = 1
+var i=0
+var j=0
+
+
+while (sell < buy) {
+     sell = prices.indexOf(Math.max.apply(null, prices))
+     buy = prices.indexOf(Math.min.apply(null, prices))
+     if (sell<buy) {{prices.splice(sell,1)} {i++} {j++}} else null
+
+}
+
+console.log("buy@", buy+i)
+console.log("sell@", sell+j)
+```
+
+# Case 2: Buy Today, Sell : Tomorrow (any day)
+
+```
+const prices = [220, 201, 205, 200, 25, 190, 185, 205, 210, 30]
+
+var sell = prices.indexOf(Math.max.apply(null, prices))
+var buy = prices.indexOf(Math.min.apply(null, prices))
+
+console.log("buy@", buy)
+console.log("sell@", sell)
+
+```
