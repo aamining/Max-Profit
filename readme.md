@@ -1,6 +1,5 @@
 
-## TWo real world cases. Please commented one to work and see results
-
+## TWo real world cases. 
 # Case 1: Buy Today, Sell : Same Day
 ```
 
